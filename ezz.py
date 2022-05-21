@@ -12,10 +12,10 @@ def clear():
 # MAIN MENU 
 clear()
 ip = str(input("\033[94m╔═══\033[91m[ Masukkan IP-nya ] •\n\033[94m╠══>\033[0m "))
-port = int(input("\033[94m╚═══\033[91m[ Masukkan PORT-nya ] •\n\033[94m╠══>\033[0m "))
-choice = int(input("\033[94m╚═══\033[91m[ Attack? (y/n) ] •\n\033[94m╠══>\033[0m "))
-times = int(input("\033[94m╚═══\033[91m[ Masukkan PACKETs-nya ] •\n\033[94m╠══>\033[0m "))
-threads = int(input("\033[94m╚═══\033[91m[ Masukkan THREADs-nya ] •\n\033[94m╠══>\033[0m "))
+port = int(input("\033[94m╠═══\033[91m[ Masukkan PORT-nya ] •\n\033[94m╠══>\033[0m "))
+choice = str(input("\033[94m╠═══\033[91m[ Attack? y/n ] •\n\033[94m╠══>\033[0m "))
+times = int(input("\033[94m╠═══\033[91m[ Masukkan PACKETs-nya ] •\n\033[94m╠══>\033[0m "))
+threads = int(input("\033[94m╠═══\033[91m[ Masukkan THREADs-nya ] •\n\033[94m╠══>\033[0m "))
 clear()
 print("\033[94m")
 ###################################################################################
