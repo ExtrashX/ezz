@@ -85,6 +85,6 @@ for y in range(threads):
 		th.start
 		th = threading.Thread(target = attack4)
 		th.start
-	elif choice = 'n':
+	elif choice == 'n':
 		print("\033[91m[ Bimzzx ] • CloseTheProgram")
 		pass
